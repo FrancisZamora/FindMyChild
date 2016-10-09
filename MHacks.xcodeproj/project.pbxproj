@@ -18,6 +18,7 @@
 		1519322D1DA95B600037425B /* ArcGIS.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1519322C1DA95B600037425B /* ArcGIS.bundle */; };
 		15CA93761DA9A50A00783FB9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CA93751DA9A50A00783FB9 /* LoginViewController.swift */; };
 		15CA93781DA9A6EF00783FB9 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CA93771DA9A6EF00783FB9 /* Client.swift */; };
+		75F0BB971C239F62EAD0F845 /* Pods_MHacks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0392D29578A4B837682C2818 /* Pods_MHacks.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0392D29578A4B837682C2818 /* Pods_MHacks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MHacks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		150403421DA89A4700869BB9 /* MHacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		150403451DA89A4700869BB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		150403471DA89A4700869BB9 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +57,8 @@
 		1519322C1DA95B600037425B /* ArcGIS.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ArcGIS.bundle; path = "../../ArcGIS-Runtime-SDK-iOS/ArcGIS.framework/Versions/Current/Resources/ArcGIS.bundle"; sourceTree = "<group>"; };
 		15CA93751DA9A50A00783FB9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		15CA93771DA9A6EF00783FB9 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		1A28D141C9D321FD43E2261E /* Pods-MHacks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHacks.release.xcconfig"; path = "Pods/Target Support Files/Pods-MHacks/Pods-MHacks.release.xcconfig"; sourceTree = "<group>"; };
+		CDB0E4CC0251FB54674BA7BD /* Pods-MHacks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHacks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MHacks/Pods-MHacks.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75F0BB971C239F62EAD0F845 /* Pods_MHacks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D422E4F6D8E875504932049 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDB0E4CC0251FB54674BA7BD /* Pods-MHacks.debug.xcconfig */,
+				1A28D141C9D321FD43E2261E /* Pods-MHacks.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		150403391DA89A4700869BB9 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +103,8 @@
 				1504035B1DA89A4800869BB9 /* MHacksTests */,
 				150403661DA89A4800869BB9 /* MHacksUITests */,
 				150403431DA89A4700869BB9 /* Products */,
+				0D422E4F6D8E875504932049 /* Pods */,
+				21F393A4D007B6788B2D42C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +153,14 @@
 			path = MHacksUITests;
 			sourceTree = "<group>";
 		};
+		21F393A4D007B6788B2D42C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0392D29578A4B837682C2818 /* Pods_MHacks.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1504036C1DA89A4800869BB9 /* Build configuration list for PBXNativeTarget "MHacks" */;
 			buildPhases = (
+				DBE0D02B9857A1FD5D113694 /* [CP] Check Pods Manifest.lock */,
 				1504033E1DA89A4700869BB9 /* Sources */,
 				1504033F1DA89A4700869BB9 /* Frameworks */,
 				150403401DA89A4700869BB9 /* Resources */,
+				31E30388C9515F3AA2AED171 /* [CP] Embed Pods Frameworks */,
+				5499D31F12F54FD22D11E8AF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,6 +294,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31E30388C9515F3AA2AED171 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MHacks/Pods-MHacks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5499D31F12F54FD22D11E8AF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MHacks/Pods-MHacks-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBE0D02B9857A1FD5D113694 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1504033E1DA89A4700869BB9 /* Sources */ = {
@@ -426,6 +501,7 @@
 		};
 		1504036D1DA89A4800869BB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDB0E4CC0251FB54674BA7BD /* Pods-MHacks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CR4JF55RLL;
@@ -440,6 +516,7 @@
 		};
 		1504036E1DA89A4800869BB9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A28D141C9D321FD43E2261E /* Pods-MHacks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CR4JF55RLL;
